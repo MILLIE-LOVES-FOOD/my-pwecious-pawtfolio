@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(232, 156, 156);
+}
+
+#display{
+    position: relative;
+
+}
+
+canvas{
+    border: 3px solid rgb(73, 4, 107);
+    position: absolute;
+}
+#UI{
+    position: absolute;
+    width: 30%;
+    background-color: blueviolet;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.pallette{
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: 2px solid lightcoral;
+    border-radius: 5px;
+}
+
+
+
+
+
+#UI div{
+    margin: 20px;
+}
+
+.pallette:hover{
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+#color1{
+    background-color: rgb(250, 186, 242);
+}
+#color2{
+    background-color: rgb(197, 140, 231);
+}
+#color3{
+    background-color: rgb(166, 225, 255);
+}
+#color4{
+    background-color: rgb(143, 243, 211);
+}
+
+#color5{
+    background-color: rgb(253, 253, 210);
+}

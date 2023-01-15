@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Indie+Flower&family=Nerko+One&display=swap');
+
+body{
+    background-color: rgb(212, 242, 219);
+    font-family: nerko one;
+   
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+
+p{
+    text-align: center;
+    color: rgb(86, 199, 148);
+    width: 400px;
+    font-size:x-large;
+}
+
+#hehe{
+    color: rgb(61, 183, 128);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -50px;
+    font-size: xx-large;
+}
+#heho{
+    color: rgb(61, 183, 128);
+    font-size:xx-large;
+}
+
+ button{
+   
+    height: 20px;
+    border-radius: 10%;
+    background-color: rgb(86, 199, 148);
+    border-color:rgb(61, 183, 128);
+    font-family: nerko one;
+    
+    
+ }
+
+ #image{
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+ }
+ #image img{
+    width: 100%;
+ }
+ #image2{
+    width: 200px;
+    position: absolute;
+    top: 45px;
+    left: 1000px;
+ }
+ #image2 img{
+    width: 100%;
+ }
+
+#folderPackage{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 620px;
+    
+}
+ .folder{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+ 
+ }
+.folderImg{
+    width: 15vw;
+    height: 15vw;
+    background-image: url(floder.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.folder p{
+    width: 20vw;
+}
+#menu{
+    width: 35px;
+    height: 35px;
+    background: none;
+    background: url(menuimg.svg);
+    background-size: cover;
+    border: none;
+    position: fixed;
+    left: 10px;
+    z-index: 5;
+}
+#paneel{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 75px;
+    height: 85px;
+    background-color: rgb(58, 169, 106);justify-content: space-around;
+    position: fixed;
+    left: 10px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 6;
+
+}
+#paneel button{
+    background: none;
+    border: none;
+    color:rgb(204, 246, 227);
+} 
+
+#menu:hover ~ #paneel{
+    opacity: 1;
+    visibility: visible;
+}
+#paneel:hover{
+    opacity: 1;
+    visibility: visible;
+}
+
+#me{
+    position: absolute;
+    top: 1800px;
+    display: flex;
+    justify-content: center;
+}
+
+#loner{
+    position: absolute;
+    top: 400px;
+}
+
+.cactu {
+    width: 200px;
+    height: 200px;
+    background: url(cactu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    animation-name: bou;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bou{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-30px);
+    }
+    75%{
+        transform: translateY(0);
+    }
+    90%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+.tape{
+    width: 800px;
+    height: 400px;
+    background: url(tape.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.topright{
+    position: absolute;
+    top: -200px;
+    right: -580px;
+}
+.botleft{
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+}

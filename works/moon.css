@@ -1,0 +1,103 @@
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: khaki;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.moon{
+    width: 300px;
+    height: 300px;
+    background-color: indigo;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.moonkiller{
+    width: 350px;
+    height: 350px;
+    background-color: khaki;
+    border-radius: 50%;
+
+    position: absolute;
+    transform: translatex(105px);
+}
+.stars-container{
+    width: 300px;
+    height: 300px;
+   position: absolute;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.star{
+    width: 1px;
+    height: 1px;
+    background: white;
+    position: absolute;
+
+
+}
+
+.hootingstar{
+    width: 1px;
+    height: 30px;
+    background: linear-gradient(lightblue, transparent);
+    transform: rotate(230deg);
+    position: absolute;
+    animation-name: shhot;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+
+.shadow{
+    position: absolute;
+    
+    width: 200px;
+    height: 18px;
+    background-color: black;
+    opacity: 0.2;
+    border-radius: 50%;
+    transform: translate(-50px, 200px);
+}
+
+#sc2{
+    left: 300px;
+}
+
+@keyframes move{
+    0%{
+        transform: translatex(0);
+    }
+    100%{
+        transform: translate(-300px);
+    }
+}
+
+
+@keyframes shhot {
+    0%{
+        transform: rotate(230deg);
+        opacity: 0;
+    }
+    10%{
+        transform: translatey(20px) rotate(230deg);
+        opacity: 1;
+    }
+    20%{
+        transform:  translatey(20px) rotate(230deg);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translatey(20px) rotate(230deg) ;
+        opacity: 0;
+    }
+}
